@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = m17n-db
+
+[Action]
+When = PostTransaction
+Exec = /usr/bin/bash -c "/etc/pacman.d/hooks.bin/bijoy_bayanno.sh"
